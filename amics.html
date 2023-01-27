@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Solicitud de amistad</title>
+		<link rel="stylesheet" href="file.css"/>
+	</head>
+	<body>
+	
+		<nav>
+			<ul class="nav">
+				<li><a href="index.html">Sobre mi</a></li>
+				<li><a href="habilitats.html">Habilidades</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="musica.html">Música</a></li>
+				<li><a href="dibuixos.html">Dibujos</a></li>
+				<li class="amistad" ><a class="active" href="amics.html">Formulario de amistad</a></li>
+			</ul>
+		</nav>
+		
+		<div class="relative">
+			<form action="http://httpbin.org/post" method="post">
+				<h2>Solicitud formal de amistad</h2>
+				<p>Para convertirte en mi amigo debes rellenar este formulario :)</p>
+				<fieldset>
+					<legend>Rellename</legend>
+					Nombre: <br><input type="text" name="nom"><br>
+					Nacimiento: <br><input type="date" name="data"><br>
+					Email: <br><input type="text" name="email"><br>
+					Teléfono: <br><input type="tel" name="telefon"><br>
+					Color favorito: <br><input type="color" name="color"><br>
+					Idiomas: <br>
+					<input type="checkbox" name="Català" value="Català">Catalán<br>
+					<input type="checkbox" name="Castellà" value="Castellà">Español<br>
+					<input type="checkbox" name="Anglès" value="Anglès">Inglés<br>
+					<input type="checkbox" name="Francès" value="Francès">Frances<br>
+					<input type="checkbox" name="Alemany" value="Alemany">Alemán<br>
+					<input type="checkbox" name="Altres" value="Altres">Otros idiomas menos importantes<br>
+					<br>
+					Otros datos importantes: <br>
+					<input type="textarea" name="altres dades" size="70" maxlength="300"><br>
+					<br>
+					Envia una foto tuyo para ver tu outfit :) <br>
+					<input type="file" name="nude"><br>
+				</fieldset>
+				<input type="radio" name="gender" value="male" checked> Macho
+				<input type="radio" name="gender" value="female"> Hembra
+				<input type="radio" name="gender" value="no binari" disabled> No binario
+				<input type="radio" name="gender" value="No ho tinc clar"> No me queda claro<br>
+				<input type="reset" value="Reset">
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+	</body>
+</html>
+
+
